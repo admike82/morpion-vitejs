@@ -95,7 +95,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MORPION</h1>
+      <div className="dflex">
+        <img src="/morpion.svg" alt="logo du jeu du morpion" width={"50px"} />
+        <h1>MORPION</h1>
+      </div>
       <AppContext.Provider value={contextValue}>
         <Tour>
           {status.value !== _JOUEUR_1.value &&
@@ -105,7 +108,6 @@ function App() {
           <Grille />
           <Score />
         </Board>
-        <Reset />
       </AppContext.Provider>
     </div>
   );

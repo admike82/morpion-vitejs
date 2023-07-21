@@ -1,10 +1,11 @@
 .score {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  padding: 10px;
+  width: calc(300px - 1rem);
   height: 300px;
-  margin-left: 1rem;
-  border: 1px solid black;
+  border: 3px solid #f1f1f1;
+  border-radius: 30% 40% 35% 25%;
 }
 
 .resultats {
@@ -15,18 +16,34 @@
 }
 
 .individuel {
+  border-radius: 50% 20% / 10% 40%;
   padding: 0 0 1rem 0;
   margin: 0 2rem;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .Joueur1 {
-  border: 5px solid blue;
-  /* background-color: lightblue; */
-  color: blue;
+  border-color: lightblue;
+  color : lightblue;
 }
 
 .Joueur2 {
-  border: 5px solid red;
-  /* background-color: lightpink; */
-  color: red
+  border-color: lightcoral;
+  color: lightcoral;
+}
+
+
+@media (prefers-color-scheme: light) {
+  .score {
+    border-color: #242424;
+  }
+  .Joueur1 {
+    border-color: blue;
+    color: blue;
+  } 
+  .Joueur2 {
+    border-color: red;
+    color: red;
+  }
 }

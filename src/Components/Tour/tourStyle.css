@@ -5,17 +5,35 @@
 }
 
 .j1 {
-  color: blue;
+  color: lightblue;
 }
 
 .j2 {
-  color: red;
+  color: lightcoral;
 }
 
 .win {
-  color: green;
+  color: lightgreen;
 }
 
 .draw {
-  color: orange;
+  color: lightsalmon;
+}
+
+@media (prefers-color-scheme: light) {
+  .j1 {
+    color: blue;
+  }
+  
+  .j2 {
+    color: red;
+  }
+  
+  .win {
+    color: green;
+  }
+  
+  .draw {
+    color: orange;
+  }
 }
