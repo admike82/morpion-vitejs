@@ -5,7 +5,6 @@ import Grille from "./Components/Grille/Grille";
 import Tour from "./Components/Tour/Tour";
 import Board from "./Components/Board/Board";
 import Score from "./Components/Score/Score";
-import Reset from "./Components/Reset/Reset";
 import Restart from "./Components/Restart/Restart";
 
 function App() {
