@@ -13,7 +13,7 @@ const Reset = () => {
 
   return (
     <div className="reset">
-      <button onClick={resetScore}>Réinitialiser les scores</button>
+      <button onClick={resetScore}>Réinitialiser</button>
     </div>
   );
 };

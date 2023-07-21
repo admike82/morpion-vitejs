@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import morpionsvg from "./assets/morpion.svg"
 import AppContext from "./Context/AppContext";
 import Grille from "./Components/Grille/Grille";
 import Tour from "./Components/Tour/Tour";
 import Board from "./Components/Board/Board";
 import Score from "./Components/Score/Score";
-import Reset from "./Components/Reset/Reset";
 import Restart from "./Components/Restart/Restart";
 
 function App() {
@@ -95,7 +95,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MORPION</h1>
+      <div className="dflex">
+        <img src={morpionsvg} alt="logo du jeu du morpion" width={"50px"} />
+        <h1>MORPION</h1>
+      </div>
       <AppContext.Provider value={contextValue}>
         <Tour>
           {status.value !== _JOUEUR_1.value &&
@@ -105,7 +108,6 @@ function App() {
           <Grille />
           <Score />
         </Board>
-        <Reset />
       </AppContext.Provider>
     </div>
   );

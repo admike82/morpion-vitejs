@@ -3,5 +3,12 @@
 }
 
 .restart button {
-  border-color: green;
+  border-radius: 50% 20% / 10% 40%;
+  border-color: lightgreen;
+}
+
+@media (prefers-color-scheme: light) {
+  .restart button {
+    border-color: green;
+  }
 }

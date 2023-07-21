@@ -10,7 +10,6 @@ const Case = ({ index }) => {
     status,
     updateStatus,
     _WINNING_PATTERNS,
-    end,
     _JOUEUR_1,
     _JOUEUR_2,
   } = useContext(AppContext);
@@ -24,6 +23,10 @@ const Case = ({ index }) => {
   const checkDraw = (tmp) => {
     return tmp.every((c) => c === _JOUEUR_1.value || c === _JOUEUR_2.value);
   };
+
+  const checkEnd = () =>{
+    return status.value === "winX" || status.value === "winO" || status.value === "draw"
+  }
 
   const clicked = () => {
     let tmp = [...cases];
@@ -48,7 +51,7 @@ const Case = ({ index }) => {
         cases[index] === "" &&
         "enable"
       }`}
-      onClick={cases[index] === "" && !end ? clicked : null}
+      onClick={cases[index] === "" && !checkEnd() ? clicked : null}
     >
       {cases[index]}
     </div>

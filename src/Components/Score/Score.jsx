@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import AppContext from "../../Context/AppContext";
 import "./scoreStyle.css";
+import Reset from "../Reset/Reset";
 
 const Score = () => {
   const { score } = useContext(AppContext);
@@ -14,6 +15,7 @@ const Score = () => {
           </div>
         ))}
       </div>
+      <Reset />
     </div>
   );
 };

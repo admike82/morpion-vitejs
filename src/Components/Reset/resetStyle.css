@@ -3,5 +3,12 @@
 }
 
 .reset button {
-  border-color: green;
+  border-color: lightgreen;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+@media (prefers-color-scheme: light) {
+  .reset button {
+    border-color: green;
+  }
 }
