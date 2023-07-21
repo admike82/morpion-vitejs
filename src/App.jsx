@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import morpionsvg from "./assets/morpion.svg"
 import AppContext from "./Context/AppContext";
 import Grille from "./Components/Grille/Grille";
 import Tour from "./Components/Tour/Tour";
@@ -95,7 +96,7 @@ function App() {
   return (
     <div className="App">
       <div className="dflex">
-        <img src="/morpion.svg" alt="logo du jeu du morpion" width={"50px"} />
+        <img src={morpionsvg} alt="logo du jeu du morpion" width={"50px"} />
         <h1>MORPION</h1>
       </div>
       <AppContext.Provider value={contextValue}>
