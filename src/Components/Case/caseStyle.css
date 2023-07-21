@@ -1,0 +1,26 @@
+.case {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.enable {
+  cursor: pointer;
+}
+
+.enable:hover{
+  background-color: lightgreen;
+}
+
+.case:nth-child(3n){
+  border-right: none;
+}
+
+.case:nth-child(6) ~ .case {
+  border-bottom: none;
+}

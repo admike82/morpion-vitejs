@@ -1,0 +1,7 @@
+
+.jeux {
+  margin: auto;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}

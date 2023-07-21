@@ -1,0 +1,21 @@
+.tour {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.j1 {
+  color: blue;
+}
+
+.j2 {
+  color: red;
+}
+
+.win {
+  color: green;
+}
+
+.draw {
+  color: orange;
+}
