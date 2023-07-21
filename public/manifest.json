@@ -1,6 +1,6 @@
 {
   "short_name": "Morpion",
-  "id": "/",
+  "id": "/morpion-vitejs/",
   "name": "Jeu du Morpion",
   "description": "Jeu du Morpion développer avec ViteJS",
   "lang": "fr-FR",
@@ -26,7 +26,7 @@
       "sizes": "any"
     }
   ],
-  "start_url": "/",
+  "start_url": "/morpion-vitejs/",
   "display": "standalone",
   "orientation": "any"
 }
